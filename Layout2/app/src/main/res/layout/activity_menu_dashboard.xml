@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="@string/TombolKalkulator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:maxLength="16"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:typeface="serif" />
+
+    <LinearLayout
+        android:id="@+id/atas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circcle"
+            android:text="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:textSize="40sp"
+            android:onClick="Pindah1"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circcle"
+            android:text="2"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:textSize="40dp"
+            android:onClick="Pindah2"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circcle"
+            android:text="3"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:onClick="Pindah3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/teksatas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/atas"
+        android:layout_centerHorizontal="true">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10sp"
+           android:layout_marginRight="8sp"
+           android:text="Linear Layout"
+           android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18sp"
+            android:text="Relative Layout"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19sp"
+            android:text="Constraint Layout"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/teksatas"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circcle"
+            android:text="4"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:textSize="40dp"
+            android:onClick="Pindah1"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circcle"
+            android:text="5"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:textSize="40dp"
+            android:onClick="Pindah5"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circcle"
+            android:text="6"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:onClick="Pindah6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tekstengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tengah"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="15sp"
+            android:text="Linear Layout"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18sp"
+            android:text="Tabel Layout"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25sp"
+            android:text="Material Design"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="35sp"
+        android:layout_below="@+id/tekstengah"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circcle"
+            android:text="7"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:textSize="40dp"
+            android:onClick="Pindah7"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circcle"
+            android:text="8"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:textSize="40dp"
+            android:onClick="Pindah8"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/bawah"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="35sp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="9sp"
+            android:text="Scroll View"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25sp"
+            android:gravity="center"
+            android:text="Scroll View \nHorizontal"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>
